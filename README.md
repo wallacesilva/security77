@@ -48,7 +48,7 @@ s77 passgen --size=16 --charlist=[all|numbers|letters|numbers_letters|low_letter
 Run local tests (development).
 
 ```bash
-make tests
+make test
 ``` 
 
 # License
