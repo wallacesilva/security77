@@ -1,0 +1,28 @@
+[tool.black]
+line-length = 110
+target-version = ["py38"]
+
+[tool.poetry]
+name = "security77"
+version = "0.1.0"
+description = "A command-line tool and python package to make security simple."
+authors = ["Wallace Silva <contact@wallacesilva.com>"]
+license = "MIT License"
+readme = "README.md"
+homepage = "https://github.com/wallacesilva/security77/"
+repository = "https://github.com/wallacesilva/security77/"
+documentation = "https://github.com/wallacesilva/security77/"
+
+[tool.poetry.scripts]
+s77 = "security77.main:cli"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^8.0.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
